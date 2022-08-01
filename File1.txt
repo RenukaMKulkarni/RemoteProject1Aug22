@@ -1,3 +1,6 @@
 Welcome to GIT session!
 
 My first commit was successful. I'm super happy.
+
+To trying handsON using GIT.
+ This is a super tool.
