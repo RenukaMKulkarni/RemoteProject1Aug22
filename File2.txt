@@ -1,6 +1,0 @@
-//Bug fix 123.
-
-New Function (){
-//Do something here..
-
-}
