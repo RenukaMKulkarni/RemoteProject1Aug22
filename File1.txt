@@ -5,5 +5,5 @@ My first commit was successful. I'm super happy.
 To trying handsON using GIT.
  This is a super tool.
 
-New line to test difference of the file......
-File updated to fix bug 1
+New line to test differences of the file......
+File updated:- to fix bug 1
