@@ -8,7 +8,7 @@ jobs:
     
     steps:
       - name: Run a script
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       
          run:|
           echo "I'm running on Dev Environment!"
@@ -18,7 +18,7 @@ jobs:
     needs: Dev
     steps:
       - name: Run a script
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
          run:|
           echo "I'm running on QA Environment!"
   Prod:
@@ -27,6 +27,6 @@ jobs:
     needs: QA
     steps:    
       -  name: Run a script
-         uses: actions/checkout@v2
+         uses: actions/checkout@v4
           run:|
           echo "I'm running on Prod Environment!"
