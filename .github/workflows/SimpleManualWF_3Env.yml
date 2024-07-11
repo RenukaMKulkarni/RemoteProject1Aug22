@@ -8,7 +8,7 @@ jobs:
     
     steps:
       - name: Run a script
-        uses: actions/checkout@4
+        uses: actions/checkout@3
       
          run:|
           echo "I'm running on Dev Environment!"
