@@ -9,10 +9,11 @@ jobs:
     
     steps:
       - name: Run a script
-        uses: actions/checkout@v2
-      
-         run:|
-          echo "I'm running on Dev Environment!"
+        uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
+              run:|
+              echo "I'm running on Dev Environment!"
   QA:
     runs-on: ubuntu-latest
     environment: QA
