@@ -27,7 +27,7 @@ jobs:
               echo "I'm running on QA Environment!"
   Prod:
     runs-on: ubuntu-latest
-    environment: QA
+    environment: Prod
     needs: QA
     steps:    
       -  name: Run a script
