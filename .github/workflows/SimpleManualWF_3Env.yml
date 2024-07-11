@@ -1,5 +1,6 @@
 name: SimpleManualWF_3Env
-on: push
+on: 
+  workflow_dispatch:
 
 jobs:
   Dev:
@@ -8,7 +9,7 @@ jobs:
     
     steps:
       - name: Run a script
-        uses: actions/checkout@3
+        uses: actions/checkout@v2
       
          run:|
           echo "I'm running on Dev Environment!"
