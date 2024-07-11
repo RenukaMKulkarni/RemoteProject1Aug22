@@ -7,8 +7,9 @@ jobs:
     environment: Dev
     
     steps:
-      - uses: actions/checkout@v2
       - name: Run a script
+        uses: actions/checkout@v2
+      
          run:|
           echo "I'm running on Dev Environment!"
   QA:
@@ -16,17 +17,16 @@ jobs:
     environment: QA
     needs: Dev
     steps:
-      - uses: actions/checkout@v2
       - name: Run a script
+        uses: actions/checkout@v2
          run:|
           echo "I'm running on QA Environment!"
   Prod:
     runs-on: ubuntu-latest
     environment: QA
     needs: QA
-    steps:
-      -  uses: actions/checkout@v2
-      
+    steps:    
       -  name: Run a script
+         uses: actions/checkout@v2
           run:|
           echo "I'm running on Prod Environment!"
